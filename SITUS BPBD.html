@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BADAN PENANGGULANGAN BENCANA DAERAH PROVINSI SULAWESI UTARA</title>
+    <style>
+       <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slideshow-container {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .mySlides {
+            display: none;
+            width: 100%;
+            height: 100%;
+            background-size: 2000px 700px;
+            background-position: inherit;
+            background-repeat: no-repeat;
+        }
+
+        .logo-container {
+            float:left;
+            margin-right: 10px;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .news {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .news article {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .news article h2 {
+            color: #333;
+        }
+
+        .news article p {
+            color: #666;
+        }
+
+        .news article a {
+            color: #333;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            border: 1px solid #333;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+
+        .news article a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer {
+           
+            padding: 20px;
+            text-align: center;
+            position: absolute;
+            bottom: 1%;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="mySlides fade" style="background-image: url('gambar1.jpg');"></div>
+        <div class="mySlides fade" style="background-image: url('gambar2.jpg');"></div>
+        <div class="mySlides fade" style="background-image: url('gambar3.jpg');"></div>
+        <div class="mySlides fade" style="background-image: url('gambar1.jpg');"></div>
+    </div>
+
+<header>
+    <h1>BPBD PROVINSI SULAWESI UTARA</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="berita.html">Informasi</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="Tentang.html">Tentang</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+        
+</main>
+
+<footer>
+    <p>Hak Cipta &copy; 2024 DISPAR PROV.SULUT All rights reserved.</p>
+</footer>
+
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(carousel, 3000); // Ubah angka 2000 menjadi waktu yang diinginkan (dalam milidetik) antara perpindahan slide
+    }
+</script>
+</body>
+</html>

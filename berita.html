@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image:
+            url('bgberita.jpg') ;
+            background-size: 1300px 700px;
+            background-position:initial;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(145, 137, 137, 0.8);
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #007bff;
+        }
+
+        ul ul {
+            padding-left: 20px;
+        }
+
+        ul ul li {
+            margin-bottom: 5px;
+        }
+
+        .main-menu li {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .main-menu li:last-child {
+            border-bottom: none;
+        }
+
+        .sub-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+           
+            z-index: 99;
+        }
+
+        .main-menu li:hover .sub-menu {
+            display: block;
+        }
+        .sub-menu li {
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Edukasi</h2>
+        <ul class="main-menu">
+            <li>SOP Seputar Kebencanaan
+                <ul class="sub-menu">
+                    <li><a href="LONGSOR.html">Tanah Longsor</a></li>
+                    <li><a href="BANJIR.html">Banjir</a></li>
+                    <li><a href="Gempa Bumi.html">Gempa Bumi</a></li>
+                   
+                </ul>
+
+        </ul>
+    </div>
+</body>
+</html>
